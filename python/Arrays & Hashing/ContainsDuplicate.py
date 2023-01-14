@@ -1,4 +1,4 @@
-# time O(n) space O(n)
+# time O(n) | space O(n)
 
 class Solution(object):
     def containsDuplicate(self, nums):
