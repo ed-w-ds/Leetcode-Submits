@@ -3,6 +3,9 @@
 #     def __init__(self, val=0, next=None):
 #         self.val = val
 #         self.next = next
+
+#Time Complexity: O(n+m) 
+#Memory Complexity: O(1)
 class Solution:
     def mergeTwoLists(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
         dummy = ListNode() 
@@ -20,3 +23,5 @@ class Solution:
         elif l2:
                 tail.next = l2
         return dummy.next
+
+
