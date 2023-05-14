@@ -17,3 +17,15 @@ class Solution(object):
             results[tuple(count)].append(s)
         # returns just the values not the keys
         return results.values()
+    
+#     class Solution:
+#     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        
+#         result = defaultdict(list)
+
+#         for words in strs:
+#             count = [0] * 26
+#             for character in words:
+#                 count[ord(character) - ord("a")] += 1
+#             result[tuple(count)].append(words)
+#         return result.values()
