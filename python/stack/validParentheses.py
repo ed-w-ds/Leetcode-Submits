@@ -25,15 +25,12 @@ class Solution:
         stack = []
         parentheses = {")" : "(", "}" : "{", "]" : "["}
 
-        if len(s) % 2 != 0:
-            return False
-        else:
-            for p in s:
-                if p in parentheses:
-                    if stack and stack[-1] == parentheses[p]:
-                        stack.pop()
-                    else:
-                        return False
+        for p in s:
+            if p in parentheses:
+                if stack and stack[-1] == parentheses[p]:
+                    stack.pop()
                 else:
-                    stack.append(p)
-            return not stack
+                    return False
+            else:
+                stack.append(p)
+        return not stack
