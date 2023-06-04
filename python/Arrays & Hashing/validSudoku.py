@@ -1,8 +1,8 @@
 lass Solution:
     def isValidSudoku(self, board: List[List[str]]) -> bool:
     # O(9^2) O(9^2)
-        cols = collections.defaultdict(set) # hashmap [key->column number : value -> set of values in the column]
-        rows = collections.defaultdict(set) # hashmap [key->row number : value -> set of values in the row]
+        cols = collections.defaultdict(set) # hashset [key->column number : value -> set of values in the column]
+        rows = collections.defaultdict(set) # hashset [key->row number : value -> set of values in the row]
         squares = collections.defaultdict(set) # key->(r//3, c//3) values->values in the square
         for row in range(9):
             for col in range(9):
