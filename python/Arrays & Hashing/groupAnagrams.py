@@ -5,7 +5,7 @@ class Solution(object):
         :rtype: List[List[str]]
         """
     # a defaultdict is a dict subclass that calls a factory function (in this case, list) to supply missing values. This means that if you try to access a key that does not exist in the dictionary, it will automatically create that key with a default value (in this case, an empty list) rather than raising a KeyError.
-        results = defaultdict(list) # val : index
+        results = defaultdict(list) 
         
         for s in strs:
             count = [0] * 26
